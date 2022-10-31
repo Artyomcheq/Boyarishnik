@@ -1,0 +1,120 @@
+@import url("./fonts.css");
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+body {
+    font-family: Helvetica, Arial,  sans-serif;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    height: 65px;
+    border-bottom: 1px solid;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header__logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: darkslategray;
+}
+
+.header__link {
+    font-size: 22px;
+    color: blueviolet;
+    text-transform: capitalize;
+}
+
+.header__link:not(:last-child) {
+    margin-right: 15px;
+}
+
+.header__link:hover {
+    color: black;
+}
+
+.header__burger {
+    display: none;
+    font-size: 30px
+}
+
+.about {
+    padding: 70px 0px;
+    background-color: beige;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.about__img {
+    width: 100%;
+    height: 400px;
+}
+
+.about__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about__desc {
+    font-size: 30px;
+    word-spacing: 5px;
+    max-width: 450px;
+}
+
+.boyare {
+    padding: 70px 0;
+}
+
+.boyar__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.boyar__card {
+    width: 100%;
+    height: 200px;
+}
+
+.boyar__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 20px;
+}
